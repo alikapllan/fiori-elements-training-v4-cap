@@ -1,0 +1,19 @@
+{
+  "name": "fiori-elements-v4-cap-overview-page-analytics",
+  "version": "0.0.1",
+  "description": "fiori elements training v4 cap - overview page and analytics",
+  "keywords": [
+    "ui5",
+    "openui5",
+    "sapui5"
+  ],
+  "main": "webapp/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "@ui5/cli": "^3.0.0",
+    "@sap/ux-ui5-tooling": "1"
+  },
+  "scripts": {
+    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+  }
+}

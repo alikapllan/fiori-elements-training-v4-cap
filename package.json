@@ -14,6 +14,10 @@
     "@cap-js/cds-types": "^0.9.0"
   },
   "scripts": {
-    "start": "cds-serve"
-  }
+    "start": "cds-serve",
+    "watch-fiori-elements-v4-cap-overview-page-analytics": "cds watch --open fiori-elements-v4-cap-overview-page-analytics/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/fiori-elements-v4-cap-overview-page-analytics"
+  ]
 }
