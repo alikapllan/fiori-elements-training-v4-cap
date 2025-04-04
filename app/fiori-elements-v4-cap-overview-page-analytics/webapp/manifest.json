@@ -95,8 +95,21 @@
     "containerLayout": "resizable",
     "enableLiveFilter": true,
     "considerAnalyticalParameters": false,
-    "cards": {},
-    "globalFilterControlType": "MacroFilterBar"
+    "cards": {
+      "cards-sample-products": {
+        "model": "mainModel",
+        "template": "sap.ovp.cards.v4.list",
+        "settings": {
+          "title": "Products List Sample",
+          "entitySet": "Products",
+          "listType": "condensed",
+          "listFlavor": "standard",
+          "tabs":[{}]
+        }
+      }
+    },
+    "globalFilterControlType": "MacroFilterBar",
+    "chartSettings": {}
   },
   "sap.fiori": {
     "registrationIds": [],
