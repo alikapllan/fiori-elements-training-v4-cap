@@ -35,5 +35,27 @@ annotate CatalogService.Products with @(
 
 // Definition of chart
 annotate CatalogService.Products with @(
-    
+   Analytics.AggregatedProperty #totalPrice: {
+        AggregatableProperty: price,
+        AggregationMethod: 'sum',
+        Name: 'totalPrice'
+   }
+);
+annotate CatalogService.Products with @(
+    UI.Chart #sampleAnalytics:{
+        ChartType: #Bubble,
+        Title: 'Price vs Category',
+        Dimensions: [category],
+        DynamicMeasures: [
+            '@Analytics.AggregatedProperty#totalPrice'
+        ],
+        MeasureAttributes: [{
+            DynamicMeasure: '@Analytics.AggregatedProperty#totalPrice',
+            Role: #Axis1
+        }],
+        DimensionAttributes: [{
+            Dimension: category,
+            Role: #Category
+        }]
+    }
 );
