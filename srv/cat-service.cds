@@ -43,7 +43,7 @@ annotate CatalogService.Products with @(
 );
 annotate CatalogService.Products with @(
     UI.Chart #sampleAnalytics:{
-        ChartType: #Bubble,
+        ChartType: #Line,
         Title: 'Price vs Category',
         Dimensions: [category],
         DynamicMeasures: [
