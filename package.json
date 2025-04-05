@@ -15,9 +15,11 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-fiori-elements-v4-cap-overview-page-analytics": "cds watch --open fiori-elements-v4-cap-overview-page-analytics/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-fiori-elements-v4-cap-overview-page-analytics": "cds watch --open fiori-elements-v4-cap-overview-page-analytics/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-fiori-elements-v4-cap-analytical-page": "cds watch --open fiori-elements-v4-cap-analytical-page/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
-    "app/fiori-elements-v4-cap-overview-page-analytics"
+    "app/fiori-elements-v4-cap-overview-page-analytics",
+    "app/fiori-elements-v4-cap-analytical-page"
   ]
 }
